@@ -1,2 +1,7 @@
+br\maua\sistemaacademico\DashboardTela.class
+br\maua\sistemaacademico\Curso.class
+br\maua\sistemaacademico\Usuario.class
+br\maua\sistemaacademico\DAO.class
+br\maua\sistemaacademico\CursosTela.class
 br\maua\sistemaacademico\LoginTela.class
-br\maua\sistemaacademico\SistemaAcademico.class
+br\maua\sistemaacademico\ConexaoBD.class

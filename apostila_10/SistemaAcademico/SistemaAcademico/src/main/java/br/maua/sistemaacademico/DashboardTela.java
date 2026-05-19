@@ -42,6 +42,7 @@ public class DashboardTela extends javax.swing.JFrame {
         gerenciarCursosButton.addActionListener(this::gerenciarCursosButtonActionPerformed);
 
         jButton2.setText("Gerenciar Alunos");
+        jButton2.addActionListener(this::jButton2ActionPerformed);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -90,6 +91,10 @@ public class DashboardTela extends javax.swing.JFrame {
         ct.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_gerenciarCursosButtonActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
