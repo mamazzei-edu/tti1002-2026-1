@@ -31,15 +31,15 @@ public class DashboardTela extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        gerenciarCursosButton = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Cadastro de cursos e alunos"));
 
-        jButton1.setText("Gerenciar Cursos");
-        jButton1.addActionListener(this::jButton1ActionPerformed);
+        gerenciarCursosButton.setText("Gerenciar Cursos");
+        gerenciarCursosButton.addActionListener(this::gerenciarCursosButtonActionPerformed);
 
         jButton2.setText("Gerenciar Alunos");
 
@@ -51,14 +51,14 @@ public class DashboardTela extends javax.swing.JFrame {
                 .addGap(84, 84, 84)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton2)
-                    .addComponent(jButton1))
+                    .addComponent(gerenciarCursosButton))
                 .addContainerGap(110, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(33, 33, 33)
-                .addComponent(jButton1)
+                .addComponent(gerenciarCursosButton)
                 .addGap(45, 45, 45)
                 .addComponent(jButton2)
                 .addContainerGap(62, Short.MAX_VALUE))
@@ -84,9 +84,12 @@ public class DashboardTela extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void gerenciarCursosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gerenciarCursosButtonActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        CursosTela ct = new CursosTela();
+        ct.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_gerenciarCursosButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -114,7 +117,7 @@ public class DashboardTela extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton gerenciarCursosButton;
     private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
