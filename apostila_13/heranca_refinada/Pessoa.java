@@ -4,6 +4,16 @@ public class Pessoa {
     private String nome;
     private int idade;
 
+    public Pessoa() {
+        System.out.println("Construindo Pessoa...");
+    }
+
+    public Pessoa(String nome, int idade) {
+        System.out.println("Construindo Pessoa...");
+        setNome(nome);
+        setIdade(idade);
+    }
+
     public String getNome() {
         return nome;
     }
